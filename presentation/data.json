@@ -1,0 +1,474 @@
+{
+  "forecasts": {
+    "Andaman & Nicobar": {
+      "urea": 0.0,
+      "dap": 0.0,
+      "npks": 0.0,
+      "mop": 0.0,
+      "total": 0.0,
+      "rank": 31
+    },
+    "Andhra Pradesh": {
+      "urea": 15.7,
+      "dap": 4.34,
+      "npks": 15.78,
+      "mop": 1.71,
+      "total": 37.53,
+      "rank": 9
+    },
+    "Arunachal Pradesh": {
+      "urea": 0.01,
+      "dap": 0.0,
+      "npks": 0.0,
+      "mop": 0.0,
+      "total": 0.01,
+      "rank": 29
+    },
+    "Assam": {
+      "urea": 4.1,
+      "dap": 0.62,
+      "npks": 0.48,
+      "mop": 0.57,
+      "total": 5.77,
+      "rank": 16
+    },
+    "Bihar": {
+      "urea": 25.6,
+      "dap": 5.83,
+      "npks": 6.04,
+      "mop": 1.84,
+      "total": 39.31,
+      "rank": 7
+    },
+    "Chandigarh": {
+      "urea": 0.0,
+      "dap": 0.0,
+      "npks": 0.0,
+      "mop": 0.0,
+      "total": 0.0,
+      "rank": 32
+    },
+    "Chhattisgarh": {
+      "urea": 10.07,
+      "dap": 3.83,
+      "npks": 2.34,
+      "mop": 0.76,
+      "total": 17.0,
+      "rank": 14
+    },
+    "Dadra & Nagar Haveli": {
+      "urea": 0.0,
+      "dap": 0.0,
+      "npks": 0.0,
+      "mop": 0.0,
+      "total": 0.0,
+      "rank": 33
+    },
+    "Daman & Diu": {
+      "urea": 0.0,
+      "dap": 0.0,
+      "npks": 0.0,
+      "mop": 0.0,
+      "total": 0.0,
+      "rank": 34
+    },
+    "Delhi": {
+      "urea": 0.4,
+      "dap": 0.04,
+      "npks": 0.0,
+      "mop": 0.0,
+      "total": 0.44,
+      "rank": 22
+    },
+    "Goa": {
+      "urea": 0.02,
+      "dap": 0.0,
+      "npks": 0.03,
+      "mop": 0.0,
+      "total": 0.05,
+      "rank": 27
+    },
+    "Gujarat": {
+      "urea": 24.23,
+      "dap": 5.42,
+      "npks": 8.35,
+      "mop": 0.92,
+      "total": 38.92,
+      "rank": 8
+    },
+    "Haryana": {
+      "urea": 22.65,
+      "dap": 5.34,
+      "npks": 1.03,
+      "mop": 0.47,
+      "total": 29.49,
+      "rank": 12
+    },
+    "Himachal Pradesh": {
+      "urea": 0.65,
+      "dap": 0.03,
+      "npks": 0.32,
+      "mop": 0.03,
+      "total": 1.03,
+      "rank": 21
+    },
+    "J&K": {
+      "urea": 1.36,
+      "dap": 0.43,
+      "npks": 0.01,
+      "mop": 0.14,
+      "total": 1.94,
+      "rank": 20
+    },
+    "Jharkhand": {
+      "urea": 3.73,
+      "dap": 0.84,
+      "npks": 0.85,
+      "mop": 0.03,
+      "total": 5.45,
+      "rank": 17
+    },
+    "Karnataka": {
+      "urea": 19.17,
+      "dap": 5.86,
+      "npks": 20.9,
+      "mop": 2.21,
+      "total": 48.14,
+      "rank": 4
+    },
+    "Kerala": {
+      "urea": 1.15,
+      "dap": 0.2,
+      "npks": 1.26,
+      "mop": 0.83,
+      "total": 3.44,
+      "rank": 18
+    },
+    "Lakshadweep": {
+      "urea": 0.0,
+      "dap": 0.0,
+      "npks": 0.0,
+      "mop": 0.0,
+      "total": 0.0,
+      "rank": 35
+    },
+    "Madhya Pradesh": {
+      "urea": 38.09,
+      "dap": 11.66,
+      "npks": 9.77,
+      "mop": 1.08,
+      "total": 60.6,
+      "rank": 3
+    },
+    "Maharashtra": {
+      "urea": 26.41,
+      "dap": 6.47,
+      "npks": 28.79,
+      "mop": 2.22,
+      "total": 63.89,
+      "rank": 2
+    },
+    "Manipur": {
+      "urea": 0.14,
+      "dap": 0.02,
+      "npks": 0.01,
+      "mop": 0.02,
+      "total": 0.19,
+      "rank": 26
+    },
+    "Meghalaya": {
+      "urea": 0.04,
+      "dap": 0.0,
+      "npks": 0.0,
+      "mop": 0.0,
+      "total": 0.04,
+      "rank": 28
+    },
+    "Mizoram": {
+      "urea": 0.2,
+      "dap": 0.0,
+      "npks": 0.0,
+      "mop": 0.0,
+      "total": 0.2,
+      "rank": 25
+    },
+    "Nagaland": {
+      "urea": 0.01,
+      "dap": 0.0,
+      "npks": 0.0,
+      "mop": 0.0,
+      "total": 0.01,
+      "rank": 30
+    },
+    "Odisha": {
+      "urea": 6.67,
+      "dap": 2.56,
+      "npks": 3.28,
+      "mop": 0.77,
+      "total": 13.28,
+      "rank": 15
+    },
+    "Puducherry": {
+      "urea": 0.15,
+      "dap": 0.02,
+      "npks": 0.08,
+      "mop": 0.01,
+      "total": 0.26,
+      "rank": 23
+    },
+    "Punjab": {
+      "urea": 32.56,
+      "dap": 6.61,
+      "npks": 1.41,
+      "mop": 0.71,
+      "total": 41.29,
+      "rank": 5
+    },
+    "Rajasthan": {
+      "urea": 26.4,
+      "dap": 6.9,
+      "npks": 2.55,
+      "mop": 0.2,
+      "total": 36.05,
+      "rank": 10
+    },
+    "Sikkim": {
+      "urea": 0.0,
+      "dap": 0.0,
+      "npks": 0.0,
+      "mop": 0.0,
+      "total": 0.0,
+      "rank": 36
+    },
+    "Tamil Nadu": {
+      "urea": 10.92,
+      "dap": 2.56,
+      "npks": 8.49,
+      "mop": 1.94,
+      "total": 23.91,
+      "rank": 13
+    },
+    "Telangana": {
+      "urea": 20.08,
+      "dap": 3.64,
+      "npks": 14.97,
+      "mop": 1.14,
+      "total": 39.83,
+      "rank": 6
+    },
+    "Tripura": {
+      "urea": 0.17,
+      "dap": 0.02,
+      "npks": 0.03,
+      "mop": 0.04,
+      "total": 0.26,
+      "rank": 24
+    },
+    "Uttar Pradesh": {
+      "urea": 2.31,
+      "dap": 0.4,
+      "npks": 0.21,
+      "mop": 0.04,
+      "total": 2.96,
+      "rank": 19
+    },
+    "Uttarakhand": {
+      "urea": 79.18,
+      "dap": 19.51,
+      "npks": 10.5,
+      "mop": 1.76,
+      "total": 110.95,
+      "rank": 1
+    },
+    "West Bengal": {
+      "urea": 15.77,
+      "dap": 3.12,
+      "npks": 12.24,
+      "mop": 2.57,
+      "total": 33.7,
+      "rank": 11
+    }
+  },
+  "rolling": [
+    {
+      "year": "2019-20",
+      "model": "Naive",
+      "mae": 0.4308,
+      "rmse": 0.9489,
+      "r2": 0.9891
+    },
+    {
+      "year": "2019-20",
+      "model": "Linear Regression",
+      "mae": 2.2077,
+      "rmse": 4.3375,
+      "r2": 0.7718
+    },
+    {
+      "year": "2019-20",
+      "model": "Random Forest",
+      "mae": 0.5325,
+      "rmse": 1.7589,
+      "r2": 0.9625
+    },
+    {
+      "year": "2020-21",
+      "model": "Naive",
+      "mae": 0.4819,
+      "rmse": 0.9415,
+      "r2": 0.9882
+    },
+    {
+      "year": "2020-21",
+      "model": "Linear Regression",
+      "mae": 0.8114,
+      "rmse": 1.3907,
+      "r2": 0.9743
+    },
+    {
+      "year": "2020-21",
+      "model": "Random Forest",
+      "mae": 0.8316,
+      "rmse": 1.9663,
+      "r2": 0.9487
+    },
+    {
+      "year": "2021-22",
+      "model": "Naive",
+      "mae": 0.4142,
+      "rmse": 0.885,
+      "r2": 0.9903
+    },
+    {
+      "year": "2021-22",
+      "model": "Linear Regression",
+      "mae": 0.8191,
+      "rmse": 1.4037,
+      "r2": 0.9756
+    },
+    {
+      "year": "2021-22",
+      "model": "Random Forest",
+      "mae": 0.4232,
+      "rmse": 0.8991,
+      "r2": 0.99
+    },
+    {
+      "year": "2022-23",
+      "model": "Naive",
+      "mae": 0.2696,
+      "rmse": 0.6022,
+      "r2": 0.9956
+    },
+    {
+      "year": "2022-23",
+      "model": "Linear Regression",
+      "mae": 0.6628,
+      "rmse": 1.1216,
+      "r2": 0.9847
+    },
+    {
+      "year": "2022-23",
+      "model": "Random Forest",
+      "mae": 0.3197,
+      "rmse": 0.7695,
+      "r2": 0.9928
+    },
+    {
+      "year": "2023-24",
+      "model": "Naive",
+      "mae": 0.5782,
+      "rmse": 1.2492,
+      "r2": 0.9836
+    },
+    {
+      "year": "2023-24",
+      "model": "Linear Regression",
+      "mae": 0.6552,
+      "rmse": 1.0721,
+      "r2": 0.9879
+    },
+    {
+      "year": "2023-24",
+      "model": "Random Forest",
+      "mae": 0.4945,
+      "rmse": 1.1614,
+      "r2": 0.9858
+    }
+  ],
+  "fert_errors": [
+    {
+      "fertilizer": "UREA",
+      "obs": 180,
+      "naive_mae": 0.5683,
+      "rf_mae": 0.7516
+    },
+    {
+      "fertilizer": "NPKS",
+      "obs": 180,
+      "naive_mae": 0.5319,
+      "rf_mae": 0.5314
+    },
+    {
+      "fertilizer": "DAP",
+      "obs": 180,
+      "naive_mae": 0.4564,
+      "rf_mae": 0.4617
+    },
+    {
+      "fertilizer": "MOP",
+      "obs": 180,
+      "naive_mae": 0.1831,
+      "rf_mae": 0.3364
+    }
+  ],
+  "discontinuity": [
+    {
+      "year": "2018-19",
+      "state": "Uttar Pradesh",
+      "fertilizer": "DAP",
+      "sales_prev": 18.08,
+      "sales_curr": 0.22,
+      "target": 0.44,
+      "pred": 0.22,
+      "error": 0.22
+    },
+    {
+      "year": "2018-19",
+      "state": "Uttar Pradesh",
+      "fertilizer": "UREA",
+      "sales_prev": 58.92,
+      "sales_curr": 2.75,
+      "target": 2.45,
+      "pred": 2.75,
+      "error": -0.3
+    },
+    {
+      "year": "2018-19",
+      "state": "Uttarakhand",
+      "fertilizer": "DAP",
+      "sales_prev": 0.29,
+      "sales_curr": 17.17,
+      "target": 21.94,
+      "pred": 17.17,
+      "error": 4.77
+    },
+    {
+      "year": "2018-19",
+      "state": "Uttarakhand",
+      "fertilizer": "UREA",
+      "sales_prev": 3.1,
+      "sales_curr": 62.86,
+      "target": 70.95,
+      "pred": 62.86,
+      "error": 8.09
+    }
+  ],
+  "total_demand": {
+    "urea": 387.94,
+    "npks": 149.72,
+    "dap": 96.27,
+    "mop": 22.01,
+    "total": 655.94
+  }
+}

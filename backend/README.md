@@ -39,6 +39,7 @@ python scripts/import_data.py
 ```
 
 Required datasets:
+
 - `../data/processed/final_forecast_2025_26.csv`
 - `../data/processed/demand_forecasting.csv`
 
@@ -51,10 +52,12 @@ uvicorn app.main:app --reload
 ```
 
 Open:
+
 - http://127.0.0.1:8000/docs
 - http://127.0.0.1:8000/health
 
 Useful endpoints:
+
 - GET `/api/v1/forecasts`
 - GET `/api/v1/forecasts/Uttarakhand/urea`
 - GET `/api/v1/history/sales?state=Uttarakhand&fertilizer_type=urea`

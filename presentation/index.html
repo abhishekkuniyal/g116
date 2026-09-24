@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project G116: AI-Powered Fertilizer Demand Forecasting & Supply Chain Platform</title>
+  <!-- Modern Typography from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="dark">
+
+  <!-- Top Global Header -->
+  <header class="presentation-header">
+    <div class="brand-badge">
+      <div class="brand-logo">G116</div>
+      <div class="brand-title">IFFCO Demand Forecasting</div>
+      <span class="brand-sub">ML PLATFORM</span>
+    </div>
+
+    <div class="header-center">
+      <div class="slide-counter">
+        SLIDE <span id="currentSlideNum">01</span> / <span id="totalSlidesNum">20</span>
+      </div>
+      <div class="timer-badge" id="timerBadge" title="Click to Pause/Start Timer">⏱️ 00:00</div>
+    </div>
+
+    <div class="header-actions">
+      <button class="btn-icon" id="prevBtn" title="Previous Slide (← / Space)">◀ Prev</button>
+      <button class="btn-icon" id="nextBtn" title="Next Slide (→ / Enter)">Next ▶</button>
+      <button class="btn-icon" id="overviewBtn" title="Slide Overview Grid (O)">⊞ Grid</button>
+      <button class="btn-icon" id="presenterBtn" title="Presenter Notes Mode (P)">🎤 Notes</button>
+      <button class="btn-icon" id="printBtn" title="Print to PDF / Handouts">🖨️ PDF</button>
+      <button class="btn-icon" id="fullscreenBtn" title="Fullscreen Mode (F)">⛶</button>
+      <button class="btn-icon" id="shortcutsBtn" title="Keyboard Shortcuts (?)">⌨</button>
+      <button class="btn-icon" id="themeBtn" title="Toggle Light/Dark Mode">🌓</button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar-container">
+      <div class="progress-bar-fill" id="progressBarFill"></div>
+    </div>
+  </header>
+
+  <!-- Presentation Stage Viewport -->
+  <main class="presentation-viewport">
+    <div class="slide-deck" id="slideDeck">
+
+      <!-- SLIDE 1: Title Slide (Department Format) -->
+      <section class="slide active" id="slide-1">
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; gap: 1.5rem;">
+          <div style="display: flex; gap: 0.6rem; align-items: center;">
+            <span class="badge-tag badge-green">CAPSTONE MAJOR PROJECT</span>
+            <span class="badge-tag badge-blue">PROJECT G116</span>
+            <span class="badge-tag badge-amber">IFFCO COLLABORATION</span>
+          </div>
+
+          <h1 style="font-size: 2.3rem; font-weight: 800; line-height: 1.25; max-width: 1050px; background: linear-gradient(135deg, #ffffff, #94a3b8); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+            AI-POWERED FERTILIZER DEMAND FORECASTING & SUPPLY CHAIN ANALYTICS PLATFORM
+          </h1>
+
+          <p style="font-size: 1.15rem; color: var(--emerald); font-weight: 600; max-width: 850px;">
+            A Multi-Model Machine Learning Evaluation for State-Level Agricultural Planning
+          </p>
+
+          <div style="background: var(--bg-card); border: 1px solid var(--border-card); border-radius: var(--radius-md); padding: 1.2rem 2.5rem; display: flex; gap: 3rem; text-align: left; margin-top: 1rem;">
+            <div>
+              <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-dim); font-weight: 700;">Presented by</div>
+              <div style="font-size: 1rem; font-weight: 700; color: var(--text-main); margin-top: 0.2rem;">Project Team (Roll No: Project G116)</div>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">Final Year B.Tech — 8th Semester</div>
+            </div>
+            <div style="border-left: 1px solid var(--border-card); padding-left: 3rem;">
+              <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-dim); font-weight: 700;">Academic Department</div>
+              <div style="font-size: 1rem; font-weight: 700; color: var(--cyan); margin-top: 0.2rem;">Department of Computer Science & Engineering</div>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">Session 2025 – 2026</div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 1.8rem; margin-top: 0.8rem; font-size: 0.85rem; color: var(--text-muted);">
+            <div><strong style="color: var(--emerald);">36</strong> States & UTs</div>
+            <div>•</div>
+            <div><strong style="color: var(--cyan);">4</strong> Fertilizer Classes</div>
+            <div>•</div>
+            <div><strong style="color: var(--blue);">1,440</strong> Historical Observations</div>
+            <div>•</div>
+            <div><strong style="color: var(--amber);">720</strong> Rolling Test Evaluations</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 2: Presentation Outline -->
+      <section class="slide" id="slide-2">
+        <div class="slide-top-header">
+          <div class="slide-category">Structure & Road Map</div>
+          <h2 class="slide-title">Presentation Outline</h2>
+          <div class="slide-subtitle">Comprehensive walkthrough adhering to Department presentation format</div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card" onclick="goToSlide(2)" style="cursor: pointer;">
+            <div class="card-title accent-green"><span>01</span> Introduction & Motivation</div>
+            <div class="card-content">
+              <ul>
+                <li><strong>Agricultural Landscape:</strong> Fertilizer logistics & IFFCO cooperative network</li>
+                <li><strong>Industrial Stakes:</strong> Sowing windows, ₹1.6L Cr subsidy burden, transit lead times</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card" onclick="goToSlide(4)" style="cursor: pointer;">
+            <div class="card-title accent-cyan"><span>02</span> Literature Review & Gap Analysis</div>
+            <div class="card-content">
+              <ul>
+                <li><strong>Theoretical Paradigms:</strong> Classical time-series vs Ensembles vs Baselines</li>
+                <li><strong>Critical Gaps:</strong> Over-complexity in low-sample macro data & undetected reporting breaks</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card" onclick="goToSlide(6)" style="cursor: pointer;">
+            <div class="card-title accent-blue"><span>03</span> Problem Formulation & Methodology</div>
+            <div class="card-content">
+              <ul>
+                <li><strong>Forecasting Target:</strong> End-of-year FY t to forecast FY t+1 across 36 entities</li>
+                <li><strong>Data Pipeline:</strong> Government MCF open data, IFFCO production logs, cleaning</li>
+                <li><strong>Reporting Break Finding:</strong> 2018-19 UP vs Uttarakhand anomaly analysis</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card" onclick="goToSlide(10)" style="cursor: pointer;">
+            <div class="card-title accent-amber"><span>04</span> Rolling Validation & Experimental Results</div>
+            <div class="card-content">
+              <ul>
+                <li><strong>5-Year Expanding Horizon:</strong> 2019-20 to 2023-24 cross-validation (720 predictions)</li>
+                <li><strong>Benchmark Performance:</strong> Naive Persistence (MAE 0.43) vs Random Forest (MAE 0.52)</li>
+                <li><strong>Chemical Errors:</strong> Urea, DAP, NPKS, and MOP disaggregated variance</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card" onclick="goToSlide(13)" style="cursor: pointer;">
+            <div class="card-title accent-rose"><span>05</span> Enterprise System Architecture</div>
+            <div class="card-content">
+              <ul>
+                <li><strong>Full-Stack Engineering:</strong> Python Pipeline ➔ Microsoft SQL Server ➔ FastAPI ➔ React</li>
+                <li><strong>Production API:</strong> Asynchronous REST endpoints, schema contracts & live dashboard</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card" onclick="goToSlide(15)" style="cursor: pointer;">
+            <div class="card-title accent-green"><span>06</span> 2025-26 Forecasts & Future Roadmap</div>
+            <div class="card-content">
+              <ul>
+                <li><strong>National Projections:</strong> 655.94 LMT demand allocation across 144 series</li>
+                <li><strong>Strategic Next Steps:</strong> Monthly downscaling, satellite NDVI, rake dispatching</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 3: Introduction -->
+      <section class="slide" id="slide-3">
+        <div class="slide-top-header">
+          <div class="slide-category">1. Introduction</div>
+          <h2 class="slide-title">Fertilizer Demand & Agricultural Logistics Ecosystem</h2>
+          <div class="slide-subtitle">Critical role of balanced fertilization and IFFCO's national distribution footprint</div>
+        </div>
+
+        <div class="tab-controls">
+          <button class="tab-btn fert-tab-btn active" data-fert="urea" onclick="selectFertilizerTab('urea')">Urea (46% N)</button>
+          <button class="tab-btn fert-tab-btn" data-fert="dap" onclick="selectFertilizerTab('dap')">DAP (18-46-0)</button>
+          <button class="tab-btn fert-tab-btn" data-fert="npks" onclick="selectFertilizerTab('npks')">NPKS Complexes</button>
+          <button class="tab-btn fert-tab-btn" data-fert="mop" onclick="selectFertilizerTab('mop')">MOP (0-0-60)</button>
+        </div>
+
+        <div class="grid-2-1">
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <div class="card fert-detail-card" data-fert="urea" style="display: flex;">
+              <div class="card-title accent-green">Urea (46% Nitrogen) — The High-Volume Engine</div>
+              <div class="card-content">
+                <ul>
+                  <li><strong>Dominant Consumption:</strong> Accounts for ~59% of India's total fertilizer consumption (387+ Lakh MT projected for 2025-26).</li>
+                  <li><strong>Agronomic Role:</strong> Essential for vegetative canopy growth and chlorophyll synthesis in paddy, wheat, and sugarcane.</li>
+                  <li><strong>Price Distortion:</strong> Heavily subsidized at statutory controlled rates, making its state-level demand highly elastic to acreage.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card fert-detail-card" data-fert="dap" style="display: none;">
+              <div class="card-title accent-cyan">DAP (Di-Ammonium Phosphate) — Basal Rooting Nutrient</div>
+              <div class="card-content">
+                <ul>
+                  <li><strong>Composition:</strong> 18% Nitrogen and 46% Phosphorus; critical basal dressing applied directly at sowing time.</li>
+                  <li><strong>Import Vulnerability:</strong> High dependence on imported rock phosphate and phosphoric acid; subject to global price swings.</li>
+                  <li><strong>Projected Demand:</strong> 96.27 Lakh MT projected for 2025-26 with peak concentration in northern and central grain belts.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card fert-detail-card" data-fert="npks" style="display: none;">
+              <div class="card-title accent-blue">NPKS Complexes — Balanced Soil Health Nutrition</div>
+              <div class="card-content">
+                <ul>
+                  <li><strong>Multi-Nutrient Balance:</strong> Tailored ratios (e.g. 10:26:26, 12:32:16, 20:20:0:13) designed for specific agro-climatic zones.</li>
+                  <li><strong>Rapid Adoption:</strong> Growing at over 6% annually as government policies encourage balanced NPK ratios over pure urea.</li>
+                  <li><strong>Projected Demand:</strong> 149.72 Lakh MT for 2025-26, representing the second largest fertilizer category in India.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card fert-detail-card" data-fert="mop" style="display: none;">
+              <div class="card-title accent-amber">MOP (Muriate of Potash) — Stress Tolerance & Quality</div>
+              <div class="card-content">
+                <ul>
+                  <li><strong>100% Import Dependent:</strong> India has zero domestic potash reserves; entire supply relies on imports from Canada, Russia, and Jordan.</li>
+                  <li><strong>Agronomic Role:</strong> Regulates plant water balance, enzyme activation, and disease resistance in cash crops (cotton, fruits, oilseeds).</li>
+                  <li><strong>Projected Demand:</strong> 22.01 Lakh MT for 2025-26; low absolute volume but crucial for balanced yield.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-title accent-cyan">The Core Forecasting Horizon</div>
+              <div class="card-content">
+                <p>At the end of financial year <strong>t</strong>, decision-makers must utilize all historical information available through <strong>t</strong> to generate forecasts for financial year <strong>t+1</strong> across all 36 States, Union Territories, and agricultural regions.</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <div class="metric-box">
+              <div class="metric-val">655.94 LMT</div>
+              <div class="metric-lbl">Total 2025-26 National Demand</div>
+            </div>
+
+            <div class="card">
+              <div class="card-title accent-green">IFFCO Cooperative Scale</div>
+              <div class="card-content">
+                <ul>
+                  <li>World's premier farmers' cooperative with over 35,000 member societies.</li>
+                  <li>Major manufacturing plants: <strong>Kalol, Kandla, Phulpur, Paradeep, and Aonla</strong>.</li>
+                  <li>Distributes directly to primary agricultural credit societies (PACS) across 36 states.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 4: Motivation -->
+      <section class="slide" id="slide-4">
+        <div class="slide-top-header">
+          <div class="slide-category">2. Motivation</div>
+          <h2 class="slide-title">Supply Chain Bottlenecks & Fiscal Vulnerabilities</h2>
+          <div class="slide-subtitle">Operational friction points and high costs of misallocated fertilizer stocks</div>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <div class="card-title accent-rose">Crop Loss from Sowing Delays</div>
+            <div class="card-content">
+              <ul>
+                <li><strong>Strict Sowing Windows:</strong> In rain-fed Kharif agriculture, sowing must coincide with monsoon arrival within a 10-14 day window.</li>
+                <li><strong>Yield Degradation:</strong> A 7 to 10 day delay in basal fertilizer application results in up to <strong>15–20% permanent crop yield loss</strong>.</li>
+                <li><strong>Farmer Panic & Hoarding:</strong> Localized perceived deficits trigger panic purchases, exacerbating artificial stockouts.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title accent-amber">Multi-Modal Transit Lead Times</div>
+            <div class="card-content">
+              <ul>
+                <li><strong>Port to Field Delay:</strong> Raw materials and imported finished goods require <strong>21 to 30 days</strong> from port offloading to rake dispatch.</li>
+                <li><strong>Railway Rake Bottlenecks:</strong> Dedicated freight corridors face seasonal rake shortages during harvest cycles.</li>
+                <li><strong>Demurrage Penalties:</strong> Miscalculated destination quotas cause railway rake congestion, incurring millions in demurrage fees.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title accent-green">Subsidy Fiscal Burden (₹1.6L Cr)</div>
+            <div class="card-content">
+              <ul>
+                <li><strong>Massive National Outlay:</strong> The Ministry of Chemicals & Fertilizers disburses ₹1.6+ Lakh Crore annually in fertilizer subsidies.</li>
+                <li><strong>Working Capital Drag:</strong> Excess buffer stock sitting in regional godowns traps cooperative capital and risks bag caking.</li>
+                <li><strong>Audit Compliance:</strong> Requires defensible, transparent forecasting methodologies for parliamentary and CAG scrutiny.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top: 1.2rem;">
+          <div class="card-title accent-blue">The Core Engineering Challenge</div>
+          <div class="card-content">
+            <p>Develop an automated, mathematically rigorous demand forecasting system that reliably predicts state-level fertilizer quotas 12 months ahead, while insulating supply planners against regional data anomalies and overfitted machine learning models.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 5: Review of Literature -->
+      <section class="slide" id="slide-5">
+        <div class="slide-top-header">
+          <div class="slide-category">3. Review of Literature</div>
+          <h2 class="slide-title">Comparative Analysis of Forecasting Methodologies</h2>
+          <div class="slide-subtitle">Taxonomy of statistical time-series, machine learning ensembles, and domain baselines</div>
+        </div>
+
+        <div class="tab-controls">
+          <button class="tab-btn lit-tab-btn active" data-cat="all" onclick="filterLiterature('all')">All Paradigms</button>
+          <button class="tab-btn lit-tab-btn" data-cat="stat" onclick="filterLiterature('stat')">Classical Statistical</button>
+          <button class="tab-btn lit-tab-btn" data-cat="ml" onclick="filterLiterature('ml')">Machine Learning</button>
+          <button class="tab-btn lit-tab-btn" data-cat="dl" onclick="filterLiterature('dl')">Deep Learning</button>
+          <button class="tab-btn lit-tab-btn" data-cat="base" onclick="filterLiterature('base')">Heuristic Baselines</button>
+        </div>
+
+        <div class="styled-table-wrap">
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Methodology</th>
+                <th>Exemplar Models</th>
+                <th>Core Theoretical Strengths</th>
+                <th>Weaknesses in Low-Sample Annual Regimes</th>
+                <th>Suitability (N=11)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="lit-row" data-cat="stat">
+                <td><strong>Classical Time-Series</strong></td>
+                <td>ARIMA, SARIMA, Holt-Winters</td>
+                <td>Strong mathematical foundations for stationary autoregressive processes and seasonal patterns.</td>
+                <td>Requires high sample sizes (N > 50); breaks down on 11-point annual macroeconomic series with structural shifts.</td>
+                <td><span class="badge-tag badge-amber">MODERATE</span></td>
+              </tr>
+              <tr class="lit-row" data-cat="ml">
+                <td><strong>Tree-Based Ensembles</strong></td>
+                <td>Random Forest, Gradient Boosting</td>
+                <td>Captures non-linear interactions between requirement, availability, and multi-year lags.</td>
+                <td>Susceptible to variance inflation and overfitting when trained on small historical samples during macro supply shocks.</td>
+                <td><span class="badge-tag badge-blue">VIABLE BENCHMARK</span></td>
+              </tr>
+              <tr class="lit-row" data-cat="dl">
+                <td><strong>Deep Neural Architectures</strong></td>
+                <td>LSTM, GRU, Temporal Fusion Transf.</td>
+                <td>Unmatched capacity on massive, high-frequency, multi-variate streaming sensor/click datasets.</td>
+                <td>Severe overparameterization on annual state series (N=11); extreme training volatility and lack of interpretability.</td>
+                <td><span class="badge-tag badge-rose">UNSUITABLE</span></td>
+              </tr>
+              <tr class="lit-row" data-cat="base">
+                <td><strong>Persistence & Drift</strong></td>
+                <td>Naive Persistence, Random Walk, Drift</td>
+                <td>Zero lookahead leakage, robust against outlier noise, optimal for strong autoregressive inertia.</td>
+                <td>Lacks structural elasticity when agricultural policies or crop acreage permanently change.</td>
+                <td><span class="badge-tag badge-green">OPTIMAL CHAMPION</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- SLIDE 6: Gap Analysis -->
+      <section class="slide" id="slide-6">
+        <div class="slide-top-header">
+          <div class="slide-category">4. Gap Analysis</div>
+          <h2 class="slide-title">Limitations of Prior Work & Project G116 Solutions</h2>
+          <div class="slide-subtitle">Bridging academic machine learning research with industrial deployment realities</div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-title accent-rose">Gap 1: Over-Complexity in Annual Macro Series</div>
+            <div class="card-content">
+              <ul>
+                <li><strong>Existing Literature Flaw:</strong> Many academic studies claim high accuracy with deep neural nets or complex ensembles without benchmarking against rigorous persistence baselines.</li>
+                <li><strong>G116 Resolution:</strong> Executed an exhaustive 5-year rolling evaluation proving that Naive Persistence beats Random Forest in 4 out of 5 years (MAE 0.4349 vs 0.5203).</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title accent-amber">Gap 2: Neglecting Administrative Data Breaks</div>
+            <div class="card-content">
+              <ul>
+                <li><strong>Existing Literature Flaw:</strong> Automated ML pipelines blindly fit to sudden statistical jumps without investigating whether they represent real market demand or reporting artifacts.</li>
+                <li><strong>G116 Resolution:</strong> Uncovered the 2018-19 UP/Uttarakhand data swap; preserved data provenance while engineering a `potential_reporting_break` binary safeguard.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title accent-blue">Gap 3: Spatial & Temporal Grain Mismatches</div>
+            <div class="card-content">
+              <ul>
+                <li><strong>Existing Literature Flaw:</strong> Incompatible datasets (e.g. district supply logs with state-level records) are often haphazardly merged, distorting national totals.</li>
+                <li><strong>G116 Resolution:</strong> Established a strict integration contract isolating the auxiliary Rajasthan district dataset from the primary 36-state national forecasting model.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title accent-green">Gap 4: Disconnect from Production Software</div>
+            <div class="card-content">
+              <ul>
+                <li><strong>Existing Literature Flaw:</strong> Most published research terminates in un-reproducible Jupyter notebooks with zero API infrastructure or end-user decision tools.</li>
+                <li><strong>G116 Resolution:</strong> Engineered an enterprise 4-tier stack: Python Pipeline ➔ Microsoft SQL Server ➔ FastAPI REST Service ➔ Modern React Analytics UI.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 7: Objectives & Problem Formulation -->
+      <section class="slide" id="slide-7">
+        <div class="slide-top-header">
+          <div class="slide-category">5. Problem Formulation</div>
+          <h2 class="slide-title">Mathematical Formulation & Core Project Objectives</h2>
+          <div class="slide-subtitle">Rigorous temporal boundary conditions, objective functions, and target metrics</div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-title accent-blue">Formal Mathematical Formulation</div>
+            <div class="card-content">
+              <p style="margin-bottom: 0.8rem;">Let <strong>i ∈ {1 ... 36}</strong> index States and UTs, <strong>j ∈ {Urea, DAP, MOP, NPKS}</strong> index chemical fertilizers, and <strong>t ∈ [2014-15 ... 2024-25]</strong> index Financial Years.</p>
+              
+              <div style="background: rgba(0, 0, 0, 0.3); border: 1px solid var(--border-card); border-radius: var(--radius-sm); padding: 0.8rem 1rem; font-family: var(--font-mono); font-size: 0.95rem; color: var(--emerald); margin-bottom: 0.8rem;">
+                Target: Y<sub>i, j, t+1</sub> = F( X<sub>i, j, ≤ t</sub> ) + ε<sub>i, j, t+1</sub>
+              </div>
+
+              <ul>
+                <li><strong>X<sub>i, j, t</sub>:</strong> Feature vector containing sales(t), sales(t-1), requirement(t), requirement(t-1), availability(t), availability(t-1), and plant indicators.</li>
+                <li><strong>Zero Lookahead Bias:</strong> Strict temporal boundary ensures information available at time t is never contaminated by future t+1 data.</li>
+                <li><strong>Optimization Objective:</strong> Minimize Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE) across all 144 target series.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title accent-green">Key Project Objectives</div>
+            <div class="card-content">
+              <ul>
+                <li><strong>Obj 1: Multi-Model Benchmark:</strong> Evaluate Naive Persistence, Linear Regression, Random Forest, Random Forest (+Features), Drift, and Recent-Change baselines.</li>
+                <li><strong>Obj 2: Expanding Rolling Cross-Validation:</strong> Test models across 5 successive fiscal forecast periods (2019-20 to 2023-24) totaling 720 out-of-sample predictions.</li>
+                <li><strong>Obj 3: 2025-26 Production Forecast:</strong> Generate verified demand predictions for all 144 state-fertilizer series with 0 missing and 0 negative values.</li>
+                <li><strong>Obj 4: Production Enterprise Platform:</strong> Implement an asynchronous FastAPI REST service and interactive React analytics dashboard.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 8: Proposed Methodology - Data Pipeline -->
+      <section class="slide" id="slide-8">
+        <div class="slide-top-header">
+          <div class="slide-category">6. Proposed Methodology</div>
+          <h2 class="slide-title">Multi-Source Data Ingestion & Engineering Pipeline</h2>
+          <div class="slide-subtitle">Schema harmonization, feature engineering, and chronological data partitioning</div>
+        </div>
+
+        <div class="tab-controls">
+          <button class="tab-btn pipeline-step-btn active" data-stage="ingest" onclick="showPipelineStage('ingest')">1. Ingestion</button>
+          <button class="tab-btn pipeline-step-btn" data-stage="clean" onclick="showPipelineStage('clean')">2. Cleaning & Normalization</button>
+          <button class="tab-btn pipeline-step-btn" data-stage="features" onclick="showPipelineStage('features')">3. Feature Store</button>
+          <button class="tab-btn pipeline-step-btn" data-stage="split" onclick="showPipelineStage('split')">4. Chronological Partitions</button>
+        </div>
+
+        <div class="card pipeline-stage-card" data-stage="ingest" style="display: block;">
+          <div class="card-title accent-cyan">Stage 1: Multi-Source Heterogeneous Data Ingestion</div>
+          <div class="card-content">
+            <div class="grid-3" style="margin-top: 0.5rem;">
+              <div class="card">
+                <strong>Government MCF Dataset</strong>
+                <p>11 financial years (2014-15 to 2024-25) across 36 States/UTs capturing Requirement, Availability, and Sales in LMT for 4 fertilizer classes.</p>
+              </div>
+              <div class="card">
+                <strong>IFFCO Plant Production Logs</strong>
+                <p>Plant-level manufacturing records from Kalol, Kandla, Phulpur, Paradeep, and Aonla aggregated by state and financial year.</p>
+              </div>
+              <div class="card">
+                <strong>Rajasthan District Supply</strong>
+                <p>District-level supply logs maintained as an auxiliary satellite store to prevent data grain distortion.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pipeline-stage-card" data-stage="clean" style="display: none;">
+          <div class="card-title accent-green">Stage 2: Entity Harmonization & Provenance Integrity</div>
+          <div class="card-content">
+            <ul>
+              <li><strong>Spelling Normalization:</strong> Standardized geographic names (e.g. 'Orissa' ➔ 'Odisha', 'Pondicherry' ➔ 'Puducherry', 'Jammu and Kashmir' ➔ 'Jammu & Kashmir').</li>
+              <li><strong>Aggregate Isolation:</strong> Preserved the 'All India' aggregate records in an isolated table to prevent double-counting state series.</li>
+              <li><strong>Missing Value Semantics:</strong> Treated missing IFFCO plant production as 'unmonitored or no manufacturing plant', NOT as zero sales in that state.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card pipeline-stage-card" data-stage="features" style="display: none;">
+          <div class="card-title accent-blue">Stage 3: Feature Store Construction (1,440 Rows × 14 Columns)</div>
+          <div class="card-content">
+            <ul>
+              <li><strong>Temporal Lag Features:</strong> `sales_lag_1`, `requirement_lag_1`, `availability_lag_1`.</li>
+              <li><strong>Derived Indicators:</strong> `iffco_production_available` (binary), `potential_reporting_break` (binary).</li>
+              <li><strong>Strict Chronological Sorting:</strong> Enforced ordering by financial year, state, and fertilizer type prior to feature generation.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card pipeline-stage-card" data-stage="split" style="display: none;">
+          <div class="card-title accent-amber">Stage 4: Zero-Leakage Chronological Partitioning</div>
+          <div class="card-content">
+            <div class="styled-table-wrap" style="margin-top: 0.5rem;">
+              <table class="styled-table">
+                <thead>
+                  <tr>
+                    <th>Partition</th>
+                    <th>Fiscal Year Range</th>
+                    <th>Observation Count</th>
+                    <th>Role in Modeling Lifecycle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Training Set</strong></td>
+                    <td>2015-16 to 2020-21</td>
+                    <td>864 rows</td>
+                    <td>Model parameter estimation and internal cross-validation</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Validation Set</strong></td>
+                    <td>2021-22 to 2022-23</td>
+                    <td>288 rows</td>
+                    <td>Hyperparameter tuning and feature selection verification</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Test Set</strong></td>
+                    <td>2023-24</td>
+                    <td>144 rows</td>
+                    <td>Final held-out historical model benchmark</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Future Prediction</strong></td>
+                    <td>2024-25 ➔ 2025-26</td>
+                    <td>144 rows</td>
+                    <td>Production deployment forecasting for upcoming financial year</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 9: Reporting Discontinuity Discovery -->
+      <section class="slide" id="slide-9">
+        <div class="slide-top-header">
+          <div class="slide-category">7. Data Quality Discovery</div>
+          <h2 class="slide-title">The 2018-19 Reporting Discontinuity in UP & Uttarakhand</h2>
+          <div class="slide-subtitle">Empirical detection, impact analysis, and engineering safeguard protocol</div>
+        </div>
+
+        <div class="tab-controls">
+          <button class="tab-btn disc-btn active" data-state="up" onclick="showDiscontinuityState('up')">Uttar Pradesh Impact</button>
+          <button class="tab-btn disc-btn" data-state="uk" onclick="showDiscontinuityState('uk')">Uttarakhand Impact</button>
+          <button class="tab-btn disc-btn" data-state="protocol" onclick="showDiscontinuityState('protocol')">Engineering Safeguard</button>
+        </div>
+
+        <div class="card disc-card" data-state="up" style="display: block;">
+          <div class="card-title accent-rose">Anomalous Drop in Uttar Pradesh (FY 2018-19)</div>
+          <div class="card-content">
+            <p>In FY 2018-19, Uttar Pradesh recorded an unprecedented statistical collapse in official sales records:</p>
+            <ul>
+              <li><strong>DAP Sales Plunge:</strong> Dropped from <strong>18.08 LMT</strong> in 2017-18 to <strong>0.22 LMT</strong> in 2018-19 (a 98.8% decline).</li>
+              <li><strong>Urea Sales Plunge:</strong> Dropped from <strong>58.92 LMT</strong> in 2017-18 to <strong>2.75 LMT</strong> in 2018-19 (a 95.3% decline).</li>
+              <li>In real agricultural consumption, such a collapse is physically impossible without catastrophic famine, pointing directly to a reporting reallocation.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card disc-card" data-state="uk" style="display: none;">
+          <div class="card-title accent-amber">Simultaneous Surge in Uttarakhand (FY 2018-19)</div>
+          <div class="card-content">
+            <p>Coinciding with the UP drop, neighboring Uttarakhand recorded an unnatural multi-thousand percent surge:</p>
+            <ul>
+              <li><strong>DAP Sales Surge:</strong> Surged from <strong>0.29 LMT</strong> in 2017-18 to <strong>17.17 LMT</strong> in 2018-19 (a 5,800% increase!).</li>
+              <li><strong>Urea Sales Surge:</strong> Surged from <strong>3.10 LMT</strong> in 2017-18 to <strong>62.86 LMT</strong> in 2018-19 (a 1,900% increase!).</li>
+              <li>These numbers represent an exact numerical swap with Uttar Pradesh's typical volumes, reflecting an administrative reporting change.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card disc-card" data-state="protocol" style="display: none;">
+          <div class="card-title accent-green">G116 Data Provenance & Safeguard Protocol</div>
+          <div class="card-content">
+            <ul>
+              <li><strong>Provenance Rule:</strong> Never overwrite or 'correct' official government numbers without official administrative gazette documentation.</li>
+              <li><strong>Automated Flag:</strong> Engineered the `potential_reporting_break` binary column to isolate these 4 series during model evaluation.</li>
+              <li><strong>Decision Recommendation:</strong> Flagged in executive dashboards so supply chain planners interpret Uttarakhand quotas with appropriate context.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="styled-table-wrap" style="margin-top: 1rem;">
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>FY</th>
+                <th>State</th>
+                <th>Fertilizer</th>
+                <th>Lag Sales (t-1)</th>
+                <th>Current Sales (t)</th>
+                <th>Target Sales (t+1)</th>
+                <th>Naive Prediction</th>
+                <th>Naive Error</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2018-19</td>
+                <td><strong>Uttar Pradesh</strong></td>
+                <td><span class="badge-tag badge-cyan">DAP</span></td>
+                <td>18.08 LMT</td>
+                <td>0.22 LMT</td>
+                <td>0.44 LMT</td>
+                <td>0.22 LMT</td>
+                <td>+0.22 LMT</td>
+              </tr>
+              <tr>
+                <td>2018-19</td>
+                <td><strong>Uttar Pradesh</strong></td>
+                <td><span class="badge-tag badge-green">Urea</span></td>
+                <td>58.92 LMT</td>
+                <td>2.75 LMT</td>
+                <td>2.45 LMT</td>
+                <td>2.75 LMT</td>
+                <td>-0.30 LMT</td>
+              </tr>
+              <tr>
+                <td>2018-19</td>
+                <td><strong>Uttarakhand</strong></td>
+                <td><span class="badge-tag badge-cyan">DAP</span></td>
+                <td>0.29 LMT</td>
+                <td>17.17 LMT</td>
+                <td>21.94 LMT</td>
+                <td>17.17 LMT</td>
+                <td>+4.77 LMT</td>
+              </tr>
+              <tr>
+                <td>2018-19</td>
+                <td><strong>Uttarakhand</strong></td>
+                <td><span class="badge-tag badge-green">Urea</span></td>
+                <td>3.10 LMT</td>
+                <td>62.86 LMT</td>
+                <td>70.95 LMT</td>
+                <td>62.86 LMT</td>
+                <td>+8.09 LMT</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- SLIDE 10: Machine Learning & Baseline Suite -->
+      <section class="slide" id="slide-10">
+        <div class="slide-top-header">
+          <div class="slide-category">8. Machine Learning Suite</div>
+          <h2 class="slide-title">Multi-Model Architecture & Baseline Benchmark Suite</h2>
+          <div class="slide-subtitle">Exhaustive evaluation of 6 distinct statistical and machine learning approaches</div>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <div class="card-title accent-green">1. Naive Persistence</div>
+            <div class="card-content">
+              <p><strong>Equation:</strong> <code>F(t+1) = Sales(t)</code></p>
+              <ul>
+                <li>Selected production model.</li>
+                <li>Leverages massive autoregressive inertia in annual agricultural quotas.</li>
+                <li>Zero parameter estimation risk; lowest rolling error.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title accent-cyan">2. Linear Regression</div>
+            <div class="card-content">
+              <p><strong>Architecture:</strong> One-Hot Encoding + OLS</p>
+              <ul>
+                <li>Estimates linear trend slopes and product categorical offsets.</li>
+                <li>Highly vulnerable to multicollinearity between requirement & availability.</li>
+                <li>Suffered high rolling RMSE.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title accent-blue">3. Random Forest (Base)</div>
+            <div class="card-content">
+              <p><strong>Architecture:</strong> 200 Trees, max_features='sqrt'</p>
+              <ul>
+                <li>Captures non-linear feature splits across state volumes.</li>
+                <li>Retained as primary machine learning benchmark.</li>
+                <li>Won over Naive persistence in 2023-24.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title accent-amber">4. RF (+Features)</div>
+            <div class="card-content">
+              <p><strong>Features:</strong> Δ Sales, Requirement Gap</p>
+              <ul>
+                <li>Engineered acceleration and supply-gap ratios.</li>
+                <li>Effective for identifying momentum shifts.</li>
+                <li>Marginal gains over standard Random Forest.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title accent-purple">5. Drift Baseline</div>
+            <div class="card-content">
+              <p><strong>Equation:</strong> <code>F(t+1) = y_t + (y_t - y_0)/t</code></p>
+              <ul>
+                <li>Extrapolates average historical growth rate from initial observation.</li>
+                <li>Prone to overshooting if early years had low bases.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title accent-rose">6. Recent-Change Baseline</div>
+            <div class="card-content">
+              <p><strong>Equation:</strong> <code>F(t+1) = y_t + (y_t - y_{t-1})</code></p>
+              <ul>
+                <li>Pure momentum extrapolation.</li>
+                <li>Severe error inflation during mean-reverting seasons.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 11: 5-Year Rolling Window Evaluation -->
+      <section class="slide" id="slide-11">
+        <div class="slide-top-header">
+          <div class="slide-category">9. Validation Framework</div>
+          <h2 class="slide-title">5-Year Rolling Window Expanding Cross-Validation</h2>
+          <div class="slide-subtitle">Simulating real-world multi-year deployment across 720 historical test predictions</div>
+        </div>
+
+        <div class="tab-controls">
+          <button class="tab-btn rolling-year-btn active" data-year="2019" onclick="selectRollingYear('2019')">2019-20 Horizon</button>
+          <button class="tab-btn rolling-year-btn" data-year="2020" onclick="selectRollingYear('2020')">2020-21 Horizon</button>
+          <button class="tab-btn rolling-year-btn" data-year="2021" onclick="selectRollingYear('2021')">2021-22 Horizon</button>
+          <button class="tab-btn rolling-year-btn" data-year="2022" onclick="selectRollingYear('2022')">2022-23 Horizon</button>
+          <button class="tab-btn rolling-year-btn" data-year="2023" onclick="selectRollingYear('2023')">2023-24 Horizon</button>
+        </div>
+
+        <div class="card rolling-year-card" data-year="2019" style="display: block;">
+          <div class="card-title accent-green">Forecast Horizon 2019-20 (Training: 2015-16 to 2018-19)</div>
+          <div class="card-content">
+            <div class="grid-3" style="margin-top: 0.5rem;">
+              <div class="metric-box">
+                <div class="metric-val">0.4308</div>
+                <div class="metric-lbl">Naive MAE (LMT)</div>
+              </div>
+              <div class="metric-box" style="border-color: rgba(59, 130, 246, 0.3);">
+                <div class="metric-val" style="color: var(--blue);">0.5325</div>
+                <div class="metric-lbl">Random Forest MAE</div>
+              </div>
+              <div class="metric-box" style="border-color: rgba(244, 63, 94, 0.3);">
+                <div class="metric-val" style="color: var(--rose);">2.2077</div>
+                <div class="metric-lbl">Linear Regression MAE</div>
+              </div>
+            </div>
+            <p style="margin-top: 0.8rem;">Evaluates model resilience immediately following the 2018-19 UP/Uttarakhand reporting anomaly. Naive persistence proved significantly more stable than Linear Regression which suffered severe outlier distortion.</p>
+          </div>
+        </div>
+
+        <div class="card rolling-year-card" data-year="2020" style="display: none;">
+          <div class="card-title accent-green">Forecast Horizon 2020-21 (Training: 2015-16 to 2019-20)</div>
+          <div class="card-content">
+            <div class="grid-3" style="margin-top: 0.5rem;">
+              <div class="metric-box">
+                <div class="metric-val">0.4819</div>
+                <div class="metric-lbl">Naive MAE (LMT)</div>
+              </div>
+              <div class="metric-box" style="border-color: rgba(59, 130, 246, 0.3);">
+                <div class="metric-val" style="color: var(--blue);">0.8316</div>
+                <div class="metric-lbl">Random Forest MAE</div>
+              </div>
+              <div class="metric-box" style="border-color: rgba(244, 63, 94, 0.3);">
+                <div class="metric-val" style="color: var(--rose);">0.8114</div>
+                <div class="metric-lbl">Linear Regression MAE</div>
+              </div>
+            </div>
+            <p style="margin-top: 0.8rem;">Tests model behavior during the onset of the COVID-19 pandemic. Agriculture was declared an essential service; Naive persistence achieved 42% lower MAE than Random Forest.</p>
+          </div>
+        </div>
+
+        <div class="card rolling-year-card" data-year="2021" style="display: none;">
+          <div class="card-title accent-green">Forecast Horizon 2021-22 (Training: 2015-16 to 2020-21)</div>
+          <div class="card-content">
+            <div class="grid-3" style="margin-top: 0.5rem;">
+              <div class="metric-box">
+                <div class="metric-val">0.4142</div>
+                <div class="metric-lbl">Naive MAE (LMT)</div>
+              </div>
+              <div class="metric-box" style="border-color: rgba(59, 130, 246, 0.3);">
+                <div class="metric-val" style="color: var(--blue);">0.4232</div>
+                <div class="metric-lbl">Random Forest MAE</div>
+              </div>
+              <div class="metric-box" style="border-color: rgba(244, 63, 94, 0.3);">
+                <div class="metric-val" style="color: var(--rose);">0.8191</div>
+                <div class="metric-lbl">Linear Regression MAE</div>
+              </div>
+            </div>
+            <p style="margin-top: 0.8rem;">Post-pandemic agricultural recovery phase with rising international commodity prices. Naive and Random Forest performed nearly identically with high R² (>0.989).</p>
+          </div>
+        </div>
+
+        <div class="card rolling-year-card" data-year="2022" style="display: none;">
+          <div class="card-title accent-green">Forecast Horizon 2022-23 (Training: 2015-16 to 2021-22)</div>
+          <div class="card-content">
+            <div class="grid-3" style="margin-top: 0.5rem;">
+              <div class="metric-box">
+                <div class="metric-val">0.2696</div>
+                <div class="metric-lbl">Naive MAE (LMT)</div>
+              </div>
+              <div class="metric-box" style="border-color: rgba(59, 130, 246, 0.3);">
+                <div class="metric-val" style="color: var(--blue);">0.3197</div>
+                <div class="metric-lbl">Random Forest MAE</div>
+              </div>
+              <div class="metric-box" style="border-color: rgba(244, 63, 94, 0.3);">
+                <div class="metric-val" style="color: var(--rose);">0.6628</div>
+                <div class="metric-lbl">Linear Regression MAE</div>
+              </div>
+            </div>
+            <p style="margin-top: 0.8rem;">Global geopolitical fertilizer supply shock (Ukraine conflict, surging ammonia/DAP import prices). Naive achieved its lowest historical MAE of 0.2696 LMT.</p>
+          </div>
+        </div>
+
+        <div class="card rolling-year-card" data-year="2023" style="display: none;">
+          <div class="card-title accent-blue">Forecast Horizon 2023-24 (Training: 2015-16 to 2022-23) — Random Forest Won!</div>
+          <div class="card-content">
+            <div class="grid-3" style="margin-top: 0.5rem;">
+              <div class="metric-box">
+                <div class="metric-val" style="color: var(--cyan);">0.5782</div>
+                <div class="metric-lbl">Naive MAE (LMT)</div>
+              </div>
+              <div class="metric-box" style="border-color: rgba(16, 185, 129, 0.4);">
+                <div class="metric-val" style="color: var(--emerald);">0.4945</div>
+                <div class="metric-lbl">Random Forest MAE (WINNER)</div>
+              </div>
+              <div class="metric-box" style="border-color: rgba(244, 63, 94, 0.3);">
+                <div class="metric-val" style="color: var(--rose);">0.6552</div>
+                <div class="metric-lbl">Linear Regression MAE</div>
+              </div>
+            </div>
+            <p style="margin-top: 0.8rem;">In 2023-24, structural changes occurred in state requirement quotas. Random Forest leveraged requirement-availability interactions to outperform Naive persistence by 14.5%.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 12: Results & Discussion - Model Benchmarking -->
+      <section class="slide" id="slide-12">
+        <div class="slide-top-header">
+          <div class="slide-category">10. Results & Discussion</div>
+          <h2 class="slide-title">5-Year Rolling Benchmark: Empirical Model Evaluation</h2>
+          <div class="slide-subtitle">Comprehensive error metrics across 720 out-of-sample predictions</div>
+        </div>
+
+        <div class="tab-controls">
+          <button class="tab-btn bench-metric-btn active" data-metric="mae" onclick="switchBenchmarkMetric('mae')">Mean Absolute Error (MAE)</button>
+          <button class="tab-btn bench-metric-btn" data-metric="rmse" onclick="switchBenchmarkMetric('rmse')">Root Mean Squared Error (RMSE)</button>
+          <button class="tab-btn bench-metric-btn" data-metric="r2" onclick="switchBenchmarkMetric('r2')">R² Score (Goodness of Fit)</button>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-title accent-green">Comparative Performance Gauge</div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.8rem;" id="benchMetricLabel">Lakh Metric Tonnes (Lower is Better)</div>
+
+            <div style="display: flex; flex-direction: column; gap: 1.2rem;">
+              <div>
+                <div style="display: flex; justify-content: space-between; font-size: 0.85rem; font-weight: 700; margin-bottom: 0.3rem;">
+                  <span>Naive Persistence (Primary)</span>
+                  <span style="color: var(--emerald);" id="barNaiveVal">0.4349</span>
+                </div>
+                <div style="height: 14px; background: rgba(255, 255, 255, 0.08); border-radius: 7px; overflow: hidden;">
+                  <div id="barNaiveFill" style="height: 100%; width: 36.2%; background: linear-gradient(90deg, var(--emerald), var(--cyan)); transition: width 0.4s ease;"></div>
+                </div>
+              </div>
+
+              <div>
+                <div style="display: flex; justify-content: space-between; font-size: 0.85rem; font-weight: 700; margin-bottom: 0.3rem;">
+                  <span>Random Forest (Secondary)</span>
+                  <span style="color: var(--blue);" id="barRfVal">0.5203</span>
+                </div>
+                <div style="height: 14px; background: rgba(255, 255, 255, 0.08); border-radius: 7px; overflow: hidden;">
+                  <div id="barRfFill" style="height: 100%; width: 43.3%; background: var(--blue); transition: width 0.4s ease;"></div>
+                </div>
+              </div>
+
+              <div>
+                <div style="display: flex; justify-content: space-between; font-size: 0.85rem; font-weight: 700; margin-bottom: 0.3rem;">
+                  <span>Linear Regression</span>
+                  <span style="color: var(--rose);" id="barLrVal">1.0312</span>
+                </div>
+                <div style="height: 14px; background: rgba(255, 255, 255, 0.08); border-radius: 7px; overflow: hidden;">
+                  <div id="barLrFill" style="height: 100%; width: 85.9%; background: var(--rose); transition: width 0.4s ease;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title accent-blue">Key Empirical Findings</div>
+            <div class="card-content">
+              <ul>
+                <li><strong>Why Naive Persistence Wins:</strong> Annual state demand is strongly anchored by agricultural acreage, crop patterns, and institutional quotas, creating heavy autocorrelation.</li>
+                <li><strong>ML Overfitting Risk:</strong> Random Forest achieves higher fit on training sets but inflates test variance during national supply crunches.</li>
+                <li><strong>Why RF is Retained:</strong> In structural transition years (such as 2023-24), Random Forest's feature awareness gave it the edge (MAE 0.4944 vs 0.5781).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="styled-table-wrap" style="margin-top: 1rem;">
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Model Architecture</th>
+                <th>Avg MAE</th>
+                <th>Avg RMSE</th>
+                <th>Avg R²</th>
+                <th>Periods Won</th>
+                <th>Deployment Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Naive Persistence</strong></td>
+                <td><strong style="color: var(--emerald);">0.4349 LMT</strong></td>
+                <td><strong style="color: var(--emerald);">0.9254 LMT</strong></td>
+                <td><strong style="color: var(--emerald);">0.9894</strong></td>
+                <td>4 of 5 years</td>
+                <td><span class="badge-tag badge-green">PRIMARY PRODUCTION</span></td>
+              </tr>
+              <tr>
+                <td><strong>Random Forest (200 trees)</strong></td>
+                <td>0.5203 LMT</td>
+                <td>1.3111 LMT</td>
+                <td>0.9760</td>
+                <td>1 of 5 years (2023-24)</td>
+                <td><span class="badge-tag badge-blue">BENCHMARK ENSEMBLE</span></td>
+              </tr>
+              <tr>
+                <td><strong>Linear Regression</strong></td>
+                <td>1.0312 LMT</td>
+                <td>1.8651 LMT</td>
+                <td>0.9389</td>
+                <td>0 years</td>
+                <td><span class="badge-tag badge-rose">REJECTED (High Variance)</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- SLIDE 13: Fertilizer & State-Level Errors -->
+      <section class="slide" id="slide-13">
+        <div class="slide-top-header">
+          <div class="slide-category">11. Error Breakdown</div>
+          <h2 class="slide-title">Disaggregated Errors across Chemical Fertilizers & States</h2>
+          <div class="slide-subtitle">Granular performance analysis across chemical categories and consumption tiers</div>
+        </div>
+
+        <div class="grid-4" style="margin-bottom: 1rem;">
+          <div class="card" style="text-align: center;">
+            <div style="font-size: 0.8rem; color: var(--emerald); font-weight: 700;">UREA (46% N)</div>
+            <div style="font-size: 1.6rem; font-weight: 800; font-family: var(--font-mono); margin: 0.4rem 0;">0.5683</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">Naive MAE (180 obs)</div>
+            <div style="font-size: 0.75rem; color: var(--blue); margin-top: 0.2rem;">RF MAE: 0.7516</div>
+          </div>
+
+          <div class="card" style="text-align: center;">
+            <div style="font-size: 0.8rem; color: var(--cyan); font-weight: 700;">NPKS COMPLEXES</div>
+            <div style="font-size: 1.6rem; font-weight: 800; font-family: var(--font-mono); margin: 0.4rem 0;">0.5319</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">Naive MAE (180 obs)</div>
+            <div style="font-size: 0.75rem; color: var(--blue); margin-top: 0.2rem;">RF MAE: 0.5314</div>
+          </div>
+
+          <div class="card" style="text-align: center;">
+            <div style="font-size: 0.8rem; color: var(--amber); font-weight: 700;">DAP (18-46-0)</div>
+            <div style="font-size: 1.6rem; font-weight: 800; font-family: var(--font-mono); margin: 0.4rem 0;">0.4564</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">Naive MAE (180 obs)</div>
+            <div style="font-size: 0.75rem; color: var(--blue); margin-top: 0.2rem;">RF MAE: 0.4617</div>
+          </div>
+
+          <div class="card" style="text-align: center;">
+            <div style="font-size: 0.8rem; color: var(--purple); font-weight: 700;">MOP (POTASH)</div>
+            <div style="font-size: 1.6rem; font-weight: 800; font-family: var(--font-mono); margin: 0.4rem 0;">0.1831</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">Naive MAE (180 obs)</div>
+            <div style="font-size: 0.75rem; color: var(--blue); margin-top: 0.2rem;">RF MAE: 0.3364</div>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-title accent-green">High-Volume Agricultural States</div>
+            <div class="card-content">
+              <ul>
+                <li><strong>Top Consumers:</strong> Uttar Pradesh, Maharashtra, Madhya Pradesh, Karnataka, and Punjab represent over 60% of total national demand.</li>
+                <li><strong>Error Perspective:</strong> Although absolute MAE is larger in high-volume states (0.8–1.5 LMT), relative percentage error remains tightly constrained under <strong>3.5% to 5.2%</strong>.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title accent-cyan">Northeastern & Hill UTs</div>
+            <div class="card-content">
+              <ul>
+                <li><strong>Low Volume Base:</strong> Sikkim, Goa, Mizoram, Ladakh, and Andaman & Nicobar operate at demand volumes below 0.1 LMT.</li>
+                <li><strong>Near-Zero Variance:</strong> Absolute errors are near-zero (MAE < 0.02 LMT), confirming that logistics focus for hill states should target warehouse weatherproofing rather than forecasting complexity.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 14: System Architecture -->
+      <section class="slide" id="slide-14">
+        <div class="slide-top-header">
+          <div class="slide-category">12. System Architecture</div>
+          <h2 class="slide-title">Full-Stack Enterprise Engineering Architecture</h2>
+          <div class="slide-subtitle">Tiered production pipeline linking data layer, relational database, REST API, and UI</div>
+        </div>
+
+        <div class="grid-4">
+          <div class="card" style="border-top: 3px solid var(--emerald);">
+            <div class="card-title accent-green">1. Data & ML Tier</div>
+            <div class="card-content">
+              <ul>
+                <li>Python 3.13 + Pandas + Scikit-Learn</li>
+                <li>Automated cleaning, lag computation, and rolling evaluation scripts</li>
+                <li>Generates verified production CSV stores</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card" style="border-top: 3px solid var(--cyan);">
+            <div class="card-title accent-cyan">2. Database Tier</div>
+            <div class="card-content">
+              <ul>
+                <li>Microsoft SQL Server 2022 (ODBC Driver 18)</li>
+                <li>Star-schema: <code>dim_state</code>, <code>dim_fertilizer</code>, <code>fact_sales_history</code>, <code>fact_demand_forecast</code></li>
+                <li>Foreign key constraints & indexation</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card" style="border-top: 3px solid var(--blue);">
+            <div class="card-title accent-blue">3. API Backend</div>
+            <div class="card-content">
+              <ul>
+                <li>FastAPI + SQLAlchemy ORM</li>
+                <li>Pydantic v2 schema validation contracts</li>
+                <li>Asynchronous endpoints for forecasts, sales history, and trends</li>
+                <li>Swagger UI at <code>/docs</code></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card" style="border-top: 3px solid var(--amber);">
+            <div class="card-title accent-amber">4. Frontend UI</div>
+            <div class="card-content">
+              <ul>
+                <li>React 19 + Vite</li>
+                <li>Recharts responsive Area, Line, and Bar charts</li>
+                <li>Interactive State & Product multi-filtering</li>
+                <li>Executive KPI summary cards</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top: 1.2rem;">
+          <div class="card-title accent-cyan">Architectural Reliability & Schema Governance</div>
+          <div class="card-content">
+            <p>The system enforces strict schema contracts at each boundary: raw data ingestion validates column types, the database maintains relational integrity, FastAPI validates incoming query parameters and response payloads via Pydantic, and React renders strongly typed dashboard views.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 15: Frontend & Backend Implementation -->
+      <section class="slide" id="slide-15">
+        <div class="slide-top-header">
+          <div class="slide-category">13. System Implementation</div>
+          <h2 class="slide-title">Software Implementation: API Services & Interactive UI</h2>
+          <div class="slide-subtitle">Live endpoint simulation and dashboard capability showcase</div>
+        </div>
+
+        <div class="tab-controls">
+          <button class="tab-btn api-test-btn active" data-endpoint="forecasts" onclick="testApiEndpoint('forecasts')">GET /api/v1/forecasts</button>
+          <button class="tab-btn api-test-btn" data-endpoint="sales" onclick="testApiEndpoint('sales')">GET /api/v1/history/sales</button>
+          <button class="tab-btn api-test-btn" data-endpoint="summary" onclick="testApiEndpoint('summary')">GET /api/v1/dashboard/summary</button>
+          <button class="tab-btn api-test-btn" data-endpoint="iffco" onclick="testApiEndpoint('iffco')">GET /api/v1/iffco/production</button>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-title accent-green">Simulated Live API Response (FastAPI)</div>
+            <pre style="background: rgba(0, 0, 0, 0.4); border: 1px solid var(--border-card); border-radius: var(--radius-sm); padding: 1rem; font-family: var(--font-mono); font-size: 0.8rem; color: #a7f3d0; height: 260px; overflow-y: auto;" id="apiJsonOutput">{
+  "status": 200,
+  "forecast_year": "2025-26",
+  "state": "Maharashtra",
+  "predictions": {
+    "urea": 26.50,
+    "npks": 23.95,
+    "dap": 8.78,
+    "mop": 4.66,
+    "total": 63.89
+  },
+  "method": "Naive Persistence",
+  "basis": "2024-25 sales"
+}</pre>
+          </div>
+
+          <div class="card">
+            <div class="card-title accent-blue">Frontend Analytics Dashboard Features</div>
+            <div class="card-content">
+              <ul>
+                <li><strong>Executive KPI Overview:</strong> Total national projected demand, highest demanding fertilizer, and active monitoring state count.</li>
+                <li><strong>Recharts Interactive Visualizations:</strong> Multi-year Area Charts comparing requirement vs availability vs actual sales.</li>
+                <li><strong>State & Fertilizer Slicers:</strong> Instant client-side drill-down into any of the 36 states and 4 chemical fertilizers.</li>
+                <li><strong>Production Traceability:</strong> Auxiliary tabs detailing IFFCO plant-level production trends.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 16: Final 2025-26 Demand Forecasts (INTERACTIVE SIMULATOR) -->
+      <section class="slide" id="slide-16">
+        <div class="slide-top-header">
+          <div class="slide-category">14. 2025-26 Projections</div>
+          <h2 class="slide-title">Interactive 2025-26 Demand Forecast Explorer</h2>
+          <div class="slide-subtitle">Select any Indian State/UT to inspect verified 2025-26 demand across all fertilizers</div>
+        </div>
+
+        <div class="simulator-box">
+          <div class="sim-selectors">
+            <div class="sim-field">
+              <label for="simStateSelect">Select Indian State / Union Territory:</label>
+              <select id="simStateSelect">
+                <!-- Populated dynamically via JS -->
+              </select>
+            </div>
+            <div style="display: flex; gap: 1rem; align-items: flex-end;">
+              <div class="sim-card highlight" style="min-width: 140px;">
+                <div class="sim-card-num" id="simRank">#2 of 36</div>
+                <div class="sim-card-lbl">National Demand Rank</div>
+              </div>
+              <div class="sim-card highlight" style="min-width: 170px;">
+                <div class="sim-card-num" id="simTotal" style="color: var(--emerald);">63.89 LMT</div>
+                <div class="sim-card-lbl">Total State Demand</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sim-results-grid">
+            <div class="sim-card">
+              <div style="font-size: 0.8rem; font-weight: 700; color: var(--emerald);">UREA DEMAND</div>
+              <div class="sim-card-num" id="simUrea" style="margin: 0.4rem 0;">26.50 LMT</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted);" id="simUreaShare">41.5% of state</div>
+            </div>
+
+            <div class="sim-card">
+              <div style="font-size: 0.8rem; font-weight: 700; color: var(--amber);">DAP DEMAND</div>
+              <div class="sim-card-num" id="simDap" style="margin: 0.4rem 0;">8.78 LMT</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted);" id="simDapShare">13.7% of state</div>
+            </div>
+
+            <div class="sim-card">
+              <div style="font-size: 0.8rem; font-weight: 700; color: var(--blue);">NPKS DEMAND</div>
+              <div class="sim-card-num" id="simNpks" style="margin: 0.4rem 0;">23.95 LMT</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted);" id="simNpksShare">37.5% of state</div>
+            </div>
+
+            <div class="sim-card">
+              <div style="font-size: 0.8rem; font-weight: 700; color: var(--purple);">MOP DEMAND</div>
+              <div class="sim-card-num" id="simMop" style="margin: 0.4rem 0;">4.66 LMT</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted);" id="simMopShare">7.3% of state</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-3" style="margin-top: 1rem;">
+          <div class="metric-box">
+            <div class="metric-val">387.94 LMT</div>
+            <div class="metric-lbl">National Urea Total (59.1%)</div>
+          </div>
+          <div class="metric-box" style="border-color: rgba(59, 130, 246, 0.3);">
+            <div class="metric-val" style="color: var(--blue);">149.72 LMT</div>
+            <div class="metric-lbl">National NPKS Total (22.8%)</div>
+          </div>
+          <div class="metric-box" style="border-color: rgba(245, 158, 11, 0.3);">
+            <div class="metric-val" style="color: var(--amber);">96.27 LMT</div>
+            <div class="metric-lbl">National DAP Total (14.7%)</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 17: Limitations & Operational Guidelines -->
+      <section class="slide" id="slide-17">
+        <div class="slide-top-header">
+          <div class="slide-category">15. Limitations</div>
+          <h2 class="slide-title">Operational Constraints & Responsible Deployment Guidelines</h2>
+          <div class="slide-subtitle">Boundary conditions and deployment guardrails for agricultural planners</div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-title accent-amber">1. Annual Granularity Limitation</div>
+            <div class="card-content">
+              <ul>
+                <li><strong>Constraint:</strong> The model operates on an annual financial-year granularity.</li>
+                <li><strong>Operational Rule:</strong> It must NOT be misrepresented as a monthly or weekly scheduling system. Rail rake scheduling requires secondary downscaling using seasonal Kharif/Rabi ratios.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title accent-rose">2. Auxiliary Data Grain Isolation</div>
+            <div class="card-content">
+              <ul>
+                <li><strong>Constraint:</strong> IFFCO Rajasthan data is district-level without chemical type segregation.</li>
+                <li><strong>Operational Rule:</strong> Direct merging into the 36-state national forecasting dataset was intentionally avoided to prevent aggregation artifacts.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title accent-blue">3. Plant Production Data Semantics</div>
+            <div class="card-content">
+              <ul>
+                <li><strong>Constraint:</strong> Plant manufacturing records are only available for states hosting IFFCO factories.</li>
+                <li><strong>Operational Rule:</strong> Missing plant records signify unmonitored or non-manufacturing states, NOT zero consumption.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title accent-green">4. Nature of 2025-26 Predictions</div>
+            <div class="card-content">
+              <ul>
+                <li><strong>Constraint:</strong> All 2025-26 values are algorithmic estimates based on FY 2024-25 baseline sales.</li>
+                <li><strong>Operational Rule:</strong> They represent expected demand under normal agricultural weather conditions and should be updated if extreme monsoon anomalies occur.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 18: Conclusion & Future Scope -->
+      <section class="slide" id="slide-18">
+        <div class="slide-top-header">
+          <div class="slide-category">16. Conclusion & Roadmap</div>
+          <h2 class="slide-title">Conclusion & Future Research Roadmap</h2>
+          <div class="slide-subtitle">Summary of academic contributions and strategic technical enhancements</div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-title accent-green">Key Project Contributions</div>
+            <div class="card-content">
+              <ul>
+                <li><strong>Empirical Rigor:</strong> Proved that on small annual macroeconomic series (N=11), Naive Persistence achieves superior stability (MAE 0.4349) compared to overparameterized ML models.</li>
+                <li><strong>Hybrid Retainment:</strong> Retained Random Forest as a critical secondary benchmark, validating its advantage during structural transition years (2023-24).</li>
+                <li><strong>Data Provenance:</strong> Discovered and safeguarded the 2018-19 UP/Uttarakhand reporting anomaly without corrupting official records.</li>
+                <li><strong>Enterprise Platform:</strong> Delivered an end-to-end production platform connecting Python pipelines, MS SQL Server, FastAPI, and React.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title accent-cyan">Future Research Roadmap</div>
+            <div class="card-content">
+              <ul>
+                <li><strong>Monthly & District Downscaling:</strong> Deconstruct annual state quotas into monthly district allocations using crop sowing calendars.</li>
+                <li><strong>Satellite Remote Sensing:</strong> Integrate Sentinel-2 / Landsat NDVI (Normalized Difference Vegetation Index) and soil moisture data.</li>
+                <li><strong>Weather & Monsoon Indices:</strong> Incorporate IMD rainfall deviation indices and reservoir water levels as dynamic features.</li>
+                <li><strong>Railway Rake Dispatch Optimization:</strong> Link demand forecasts directly with Indian Railways freight scheduling systems.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 19: References -->
+      <section class="slide" id="slide-19">
+        <div class="slide-top-header">
+          <div class="slide-category">17. References</div>
+          <h2 class="slide-title">References & Authoritative Documentation</h2>
+          <div class="slide-subtitle">Peer-reviewed literature, government publications, and open-source frameworks</div>
+        </div>
+
+        <div class="card" style="flex: 1; overflow-y: auto;">
+          <div class="card-content">
+            <ol style="display: flex; flex-direction: column; gap: 0.8rem; padding-left: 1.2rem;">
+              <li><strong>Ministry of Chemicals & Fertilizers, Government of India:</strong> Department of Fertilizers Annual Reports and Fertilizer Management Dashboard (2014-15 to 2024-25). URL: <code>mcf.gov.in</code>.</li>
+              <li><strong>Indian Farmers Fertiliser Cooperative (IFFCO):</strong> Annual Production, Manufacturing Statistics, and Distribution Statements (Kalol, Kandla, Phulpur, Paradeep, Aonla Units).</li>
+              <li><strong>Box, G. E., Jenkins, G. M., Reinsel, G. C., & Ljung, G. M. (2015):</strong> <em>Time Series Analysis: Forecasting and Control</em>. John Wiley & Sons, 5th Edition.</li>
+              <li><strong>Breiman, L. (2001):</strong> <em>Random Forests</em>. Machine Learning, 45(1), 5-32.</li>
+              <li><strong>Hyndman, R. J., & Athanasopoulos, G. (2021):</strong> <em>Forecasting: Principles and Practice</em>. OTexts, 3rd Edition (Persistence and rolling validation benchmarks).</li>
+              <li><strong>Pedregosa, F., et al. (2011):</strong> <em>Scikit-learn: Machine Learning in Python</em>. Journal of Machine Learning Research, 12, 2825-2830.</li>
+              <li><strong>Tiangolo, S. (2018):</strong> <em>FastAPI: Modern, High-Performance Web Framework for Python</em>. URL: <code>fastapi.tiangolo.com</code>.</li>
+              <li><strong>Microsoft Corporation:</strong> <em>Microsoft SQL Server 2022 Technical Specifications & ODBC Driver Best Practices</em>.</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 20: Thank You & Q&A -->
+      <section class="slide" id="slide-20">
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; gap: 1.8rem;">
+          <div class="badge-tag badge-green" style="font-size: 0.9rem; padding: 0.4rem 1rem;">PROJECT G116 FINAL DEFENSE</div>
+
+          <h1 style="font-size: 4rem; font-weight: 900; color: var(--emerald); letter-spacing: -0.03em; line-height: 1;">
+            Thank You!
+          </h1>
+
+          <p style="font-size: 1.6rem; font-weight: 700; color: var(--text-main);">
+            Questions, Feedback & Discussion
+          </p>
+
+          <p style="font-size: 1.05rem; color: var(--text-muted); max-width: 650px;">
+            AI-Powered Fertilizer Demand Forecasting & Supply Chain Analytics Platform
+          </p>
+
+          <div style="display: flex; gap: 1.5rem; margin-top: 1rem;">
+            <div class="card" style="padding: 1rem 1.8rem; text-align: center;">
+              <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-dim); font-weight: 700;">Backend API</div>
+              <div style="font-size: 0.95rem; font-weight: 700; color: var(--cyan); margin-top: 0.2rem;">http://127.0.0.1:8000/docs</div>
+            </div>
+            <div class="card" style="padding: 1rem 1.8rem; text-align: center;">
+              <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-dim); font-weight: 700;">Frontend UI</div>
+              <div style="font-size: 0.95rem; font-weight: 700; color: var(--emerald); margin-top: 0.2rem;">http://localhost:5173</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Floating Bottom Nav Controls -->
+      <div class="slide-footer-nav">
+        <button class="nav-arrow" onclick="prevSlide()" title="Previous Slide">◀</button>
+        <button class="nav-arrow" onclick="nextSlide()" title="Next Slide">▶</button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Overview Grid Modal -->
+  <div class="overview-modal" id="overviewModal">
+    <div class="overview-header">
+      <h3 style="font-size: 1.4rem; font-weight: 800; color: var(--text-main);">Slide Deck Overview (20 Slides)</h3>
+      <button class="btn-icon" id="closeOverview">✕ Close</button>
+    </div>
+    <div class="overview-grid" id="overviewGrid">
+      <!-- Generated via app.js -->
+    </div>
+  </div>
+
+  <!-- Presenter Notes Drawer -->
+  <div class="presenter-drawer" id="presenterDrawer">
+    <div class="presenter-header">
+      <div style="font-weight: 700; color: var(--emerald); display: flex; align-items: center; gap: 0.5rem;">
+        <span>🎤 PRESENTER SPEAKER SCRIPT</span>
+      </div>
+      <button class="btn-icon" id="closePresenter" style="padding: 0.2rem 0.5rem; font-size: 0.8rem;">✕ Close</button>
+    </div>
+    <div class="presenter-body">
+      <div class="notes-content" id="presenterNotes">
+        <!-- Injected via app.js -->
+      </div>
+      <div class="next-preview" id="nextSlidePreview">
+        <!-- Injected via app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Keyboard Shortcuts Cheat Sheet Modal -->
+  <div class="shortcuts-modal" id="shortcutsModal">
+    <div class="shortcuts-box">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem;">
+        <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--text-main);">Keyboard Shortcuts</h3>
+        <button class="btn-icon" id="closeShortcuts">✕</button>
+      </div>
+
+      <div class="shortcut-row">
+        <span>Next Slide</span>
+        <div><span class="kbd">→</span> or <span class="kbd">Space</span> or <span class="kbd">PgDn</span></div>
+      </div>
+      <div class="shortcut-row">
+        <span>Previous Slide</span>
+        <div><span class="kbd">←</span> or <span class="kbd">Backspace</span> or <span class="kbd">PgUp</span></div>
+      </div>
+      <div class="shortcut-row">
+        <span>First / Last Slide</span>
+        <div><span class="kbd">Home</span> / <span class="kbd">End</span></div>
+      </div>
+      <div class="shortcut-row">
+        <span>Toggle Fullscreen</span>
+        <div><span class="kbd">F</span></div>
+      </div>
+      <div class="shortcut-row">
+        <span>Toggle Overview Grid</span>
+        <div><span class="kbd">O</span></div>
+      </div>
+      <div class="shortcut-row">
+        <span>Toggle Presenter Mode</span>
+        <div><span class="kbd">P</span></div>
+      </div>
+      <div class="shortcut-row">
+        <span>Pause / Resume Timer</span>
+        <div><span class="kbd">T</span></div>
+      </div>
+      <div class="shortcut-row">
+        <span>Help / Shortcuts</span>
+        <div><span class="kbd">?</span></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

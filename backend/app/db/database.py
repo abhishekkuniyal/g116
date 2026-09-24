@@ -35,7 +35,7 @@ def build_database_url():
 engine = create_engine(
     build_database_url(),
     pool_pre_ping=True,
-    fast_executemany=True,
+    
 )
 SessionLocal = sessionmaker(bind=engine, autoflush=False, autocommit=False)
 
