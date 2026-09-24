@@ -1,0 +1,5 @@
+financial_year,state,fertilizer_type,sales_lag_1,sales_current,target_sales,naive_prediction,naive_error,naive_absolute_error
+2018-19,Uttar Pradesh,dap,18.08,0.22,0.44,0.22,0.22,0.22
+2018-19,Uttar Pradesh,urea,58.92,2.75,2.45,2.75,-0.2999999999999998,0.2999999999999998
+2018-19,Uttarakhand,dap,0.29,17.17,21.94,17.17,4.77,4.77
+2018-19,Uttarakhand,urea,3.1,62.86,70.95,62.86,8.090000000000003,8.090000000000003

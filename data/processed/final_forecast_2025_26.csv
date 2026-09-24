@@ -1,0 +1,145 @@
+forecast_year,state,fertilizer_type,sales_2024_25,predicted_sales,forecast_method,forecast_basis
+2025-26,Andaman & Nicobar,dap,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Andaman & Nicobar,mop,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Andaman & Nicobar,npks,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Andaman & Nicobar,urea,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Andhra Pradesh,dap,4.34,4.34,Naive Persistence,2024-25 sales
+2025-26,Andhra Pradesh,mop,1.71,1.71,Naive Persistence,2024-25 sales
+2025-26,Andhra Pradesh,npks,15.78,15.78,Naive Persistence,2024-25 sales
+2025-26,Andhra Pradesh,urea,15.7,15.7,Naive Persistence,2024-25 sales
+2025-26,Arunachal Pradesh,dap,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Arunachal Pradesh,mop,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Arunachal Pradesh,npks,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Arunachal Pradesh,urea,0.01,0.01,Naive Persistence,2024-25 sales
+2025-26,Assam,dap,0.62,0.62,Naive Persistence,2024-25 sales
+2025-26,Assam,mop,0.57,0.57,Naive Persistence,2024-25 sales
+2025-26,Assam,npks,0.48,0.48,Naive Persistence,2024-25 sales
+2025-26,Assam,urea,4.1,4.1,Naive Persistence,2024-25 sales
+2025-26,Bihar,dap,5.83,5.83,Naive Persistence,2024-25 sales
+2025-26,Bihar,mop,1.84,1.84,Naive Persistence,2024-25 sales
+2025-26,Bihar,npks,6.04,6.04,Naive Persistence,2024-25 sales
+2025-26,Bihar,urea,25.6,25.6,Naive Persistence,2024-25 sales
+2025-26,Chandigarh,dap,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Chandigarh,mop,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Chandigarh,npks,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Chandigarh,urea,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Chhattisgarh,dap,3.83,3.83,Naive Persistence,2024-25 sales
+2025-26,Chhattisgarh,mop,0.76,0.76,Naive Persistence,2024-25 sales
+2025-26,Chhattisgarh,npks,2.34,2.34,Naive Persistence,2024-25 sales
+2025-26,Chhattisgarh,urea,10.07,10.07,Naive Persistence,2024-25 sales
+2025-26,Dadra & Nagar Haveli,dap,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Dadra & Nagar Haveli,mop,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Dadra & Nagar Haveli,npks,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Dadra & Nagar Haveli,urea,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Daman & Diu,dap,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Daman & Diu,mop,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Daman & Diu,npks,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Daman & Diu,urea,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Delhi,dap,0.04,0.04,Naive Persistence,2024-25 sales
+2025-26,Delhi,mop,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Delhi,npks,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Delhi,urea,0.4,0.4,Naive Persistence,2024-25 sales
+2025-26,Goa,dap,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Goa,mop,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Goa,npks,0.03,0.03,Naive Persistence,2024-25 sales
+2025-26,Goa,urea,0.02,0.02,Naive Persistence,2024-25 sales
+2025-26,Gujarat,dap,5.42,5.42,Naive Persistence,2024-25 sales
+2025-26,Gujarat,mop,0.92,0.92,Naive Persistence,2024-25 sales
+2025-26,Gujarat,npks,8.35,8.35,Naive Persistence,2024-25 sales
+2025-26,Gujarat,urea,24.23,24.23,Naive Persistence,2024-25 sales
+2025-26,Haryana,dap,5.34,5.34,Naive Persistence,2024-25 sales
+2025-26,Haryana,mop,0.47,0.47,Naive Persistence,2024-25 sales
+2025-26,Haryana,npks,1.03,1.03,Naive Persistence,2024-25 sales
+2025-26,Haryana,urea,22.65,22.65,Naive Persistence,2024-25 sales
+2025-26,Himachal Pradesh,dap,0.03,0.03,Naive Persistence,2024-25 sales
+2025-26,Himachal Pradesh,mop,0.03,0.03,Naive Persistence,2024-25 sales
+2025-26,Himachal Pradesh,npks,0.32,0.32,Naive Persistence,2024-25 sales
+2025-26,Himachal Pradesh,urea,0.65,0.65,Naive Persistence,2024-25 sales
+2025-26,J&K,dap,0.43,0.43,Naive Persistence,2024-25 sales
+2025-26,J&K,mop,0.14,0.14,Naive Persistence,2024-25 sales
+2025-26,J&K,npks,0.01,0.01,Naive Persistence,2024-25 sales
+2025-26,J&K,urea,1.36,1.36,Naive Persistence,2024-25 sales
+2025-26,Jharkhand,dap,0.84,0.84,Naive Persistence,2024-25 sales
+2025-26,Jharkhand,mop,0.03,0.03,Naive Persistence,2024-25 sales
+2025-26,Jharkhand,npks,0.85,0.85,Naive Persistence,2024-25 sales
+2025-26,Jharkhand,urea,3.73,3.73,Naive Persistence,2024-25 sales
+2025-26,Karnataka,dap,5.86,5.86,Naive Persistence,2024-25 sales
+2025-26,Karnataka,mop,2.21,2.21,Naive Persistence,2024-25 sales
+2025-26,Karnataka,npks,20.9,20.9,Naive Persistence,2024-25 sales
+2025-26,Karnataka,urea,19.17,19.17,Naive Persistence,2024-25 sales
+2025-26,Kerala,dap,0.2,0.2,Naive Persistence,2024-25 sales
+2025-26,Kerala,mop,0.83,0.83,Naive Persistence,2024-25 sales
+2025-26,Kerala,npks,1.26,1.26,Naive Persistence,2024-25 sales
+2025-26,Kerala,urea,1.15,1.15,Naive Persistence,2024-25 sales
+2025-26,Lakshadweep,dap,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Lakshadweep,mop,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Lakshadweep,npks,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Lakshadweep,urea,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Madhya Pradesh,dap,11.66,11.66,Naive Persistence,2024-25 sales
+2025-26,Madhya Pradesh,mop,1.08,1.08,Naive Persistence,2024-25 sales
+2025-26,Madhya Pradesh,npks,9.77,9.77,Naive Persistence,2024-25 sales
+2025-26,Madhya Pradesh,urea,38.09,38.09,Naive Persistence,2024-25 sales
+2025-26,Maharashtra,dap,6.47,6.47,Naive Persistence,2024-25 sales
+2025-26,Maharashtra,mop,2.22,2.22,Naive Persistence,2024-25 sales
+2025-26,Maharashtra,npks,28.79,28.79,Naive Persistence,2024-25 sales
+2025-26,Maharashtra,urea,26.41,26.41,Naive Persistence,2024-25 sales
+2025-26,Manipur,dap,0.02,0.02,Naive Persistence,2024-25 sales
+2025-26,Manipur,mop,0.02,0.02,Naive Persistence,2024-25 sales
+2025-26,Manipur,npks,0.01,0.01,Naive Persistence,2024-25 sales
+2025-26,Manipur,urea,0.14,0.14,Naive Persistence,2024-25 sales
+2025-26,Meghalaya,dap,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Meghalaya,mop,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Meghalaya,npks,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Meghalaya,urea,0.04,0.04,Naive Persistence,2024-25 sales
+2025-26,Mizoram,dap,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Mizoram,mop,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Mizoram,npks,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Mizoram,urea,0.2,0.2,Naive Persistence,2024-25 sales
+2025-26,Nagaland,dap,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Nagaland,mop,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Nagaland,npks,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Nagaland,urea,0.01,0.01,Naive Persistence,2024-25 sales
+2025-26,Odisha,dap,2.56,2.56,Naive Persistence,2024-25 sales
+2025-26,Odisha,mop,0.77,0.77,Naive Persistence,2024-25 sales
+2025-26,Odisha,npks,3.28,3.28,Naive Persistence,2024-25 sales
+2025-26,Odisha,urea,6.67,6.67,Naive Persistence,2024-25 sales
+2025-26,Puducherry,dap,0.02,0.02,Naive Persistence,2024-25 sales
+2025-26,Puducherry,mop,0.01,0.01,Naive Persistence,2024-25 sales
+2025-26,Puducherry,npks,0.08,0.08,Naive Persistence,2024-25 sales
+2025-26,Puducherry,urea,0.15,0.15,Naive Persistence,2024-25 sales
+2025-26,Punjab,dap,6.61,6.61,Naive Persistence,2024-25 sales
+2025-26,Punjab,mop,0.71,0.71,Naive Persistence,2024-25 sales
+2025-26,Punjab,npks,1.41,1.41,Naive Persistence,2024-25 sales
+2025-26,Punjab,urea,32.56,32.56,Naive Persistence,2024-25 sales
+2025-26,Rajasthan,dap,6.9,6.9,Naive Persistence,2024-25 sales
+2025-26,Rajasthan,mop,0.2,0.2,Naive Persistence,2024-25 sales
+2025-26,Rajasthan,npks,2.55,2.55,Naive Persistence,2024-25 sales
+2025-26,Rajasthan,urea,26.4,26.4,Naive Persistence,2024-25 sales
+2025-26,Sikkim,dap,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Sikkim,mop,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Sikkim,npks,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Sikkim,urea,0.0,0.0,Naive Persistence,2024-25 sales
+2025-26,Tamil Nadu,dap,2.56,2.56,Naive Persistence,2024-25 sales
+2025-26,Tamil Nadu,mop,1.94,1.94,Naive Persistence,2024-25 sales
+2025-26,Tamil Nadu,npks,8.49,8.49,Naive Persistence,2024-25 sales
+2025-26,Tamil Nadu,urea,10.92,10.92,Naive Persistence,2024-25 sales
+2025-26,Telangana,dap,3.64,3.64,Naive Persistence,2024-25 sales
+2025-26,Telangana,mop,1.14,1.14,Naive Persistence,2024-25 sales
+2025-26,Telangana,npks,14.97,14.97,Naive Persistence,2024-25 sales
+2025-26,Telangana,urea,20.08,20.08,Naive Persistence,2024-25 sales
+2025-26,Tripura,dap,0.02,0.02,Naive Persistence,2024-25 sales
+2025-26,Tripura,mop,0.04,0.04,Naive Persistence,2024-25 sales
+2025-26,Tripura,npks,0.03,0.03,Naive Persistence,2024-25 sales
+2025-26,Tripura,urea,0.17,0.17,Naive Persistence,2024-25 sales
+2025-26,Uttar Pradesh,dap,0.4,0.4,Naive Persistence,2024-25 sales
+2025-26,Uttar Pradesh,mop,0.04,0.04,Naive Persistence,2024-25 sales
+2025-26,Uttar Pradesh,npks,0.21,0.21,Naive Persistence,2024-25 sales
+2025-26,Uttar Pradesh,urea,2.31,2.31,Naive Persistence,2024-25 sales
+2025-26,Uttarakhand,dap,19.51,19.51,Naive Persistence,2024-25 sales
+2025-26,Uttarakhand,mop,1.76,1.76,Naive Persistence,2024-25 sales
+2025-26,Uttarakhand,npks,10.5,10.5,Naive Persistence,2024-25 sales
+2025-26,Uttarakhand,urea,79.18,79.18,Naive Persistence,2024-25 sales
+2025-26,West Bengal,dap,3.12,3.12,Naive Persistence,2024-25 sales
+2025-26,West Bengal,mop,2.57,2.57,Naive Persistence,2024-25 sales
+2025-26,West Bengal,npks,12.24,12.24,Naive Persistence,2024-25 sales
+2025-26,West Bengal,urea,15.77,15.77,Naive Persistence,2024-25 sales
