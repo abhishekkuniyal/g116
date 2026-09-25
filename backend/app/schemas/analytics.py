@@ -24,6 +24,10 @@ class TrendResponse(BaseModel):
 class DashboardSummary(BaseModel):
     forecast_year: str | None
     total_forecast_records: int
+    historical_records: int
+    iffco_production_records: int
+    rajasthan_supply_records: int
     states: int
     fertilizer_types: int
     total_predicted_sales: float
+    data_ready: bool
