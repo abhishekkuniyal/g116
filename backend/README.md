@@ -4,12 +4,12 @@ This backend consumes the **existing forecasting outputs**. It does not change o
 
 Required end-to-end data:
 
-| Table | Source CSV | Required rows |
-|---|---|---:|
-| `forecasts` | `final_forecast_2025_26.csv` | 144 |
-| `historical_demand` | `demand_forecasting.csv` | 1,440 |
-| `iffco_production` | `iffco_production_state_year.csv` | 44 |
-| `rajasthan_supply` | `iffco_rajasthan_clean.csv` | 132 |
+| Table                 | Source CSV                          | Required rows |
+| --------------------- | ----------------------------------- | ------------: |
+| `forecasts`         | `final_forecast_2025_26.csv`      |           144 |
+| `historical_demand` | `demand_forecasting.csv`          |         1,440 |
+| `iffco_production`  | `iffco_production_state_year.csv` |            44 |
+| `rajasthan_supply`  | `iffco_rajasthan_clean.csv`       |           132 |
 
 The importer **fails clearly** if a required file/schema/count is wrong. It no longer silently skips IFFCO data.
 
