@@ -1,0 +1,15 @@
+[phases.setup]
+aptPkgs = ["curl", "gnupg", "unixodbc-dev", "ca-certificates"]
+cmds = [
+  "curl -sSL -O https://packages.microsoft.com/config/debian/12/packages-microsoft-prod.deb",
+  "dpkg -i packages-microsoft-prod.deb",
+  "rm -f packages-microsoft-prod.deb",
+  "apt-get update",
+  "ACCEPT_EULA=Y apt-get install -y msodbcsql18"
+]
+
+[phases.install]
+cmds = ["uv pip install --system --no-cache -r requirements.txt"]
+
+[start]
+cmd = "uvicorn app.main:app --host 0.0.0.0 --port $PORT"
